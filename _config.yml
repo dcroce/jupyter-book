@@ -16,14 +16,14 @@
 
 #######################################################################################
 # Jekyll site settings
-title: Jupyter Books
-author: Samuel Lau and Deborah Nolan and Chris Holdgraf
-email: samlau95@berkeley.edu
+title: Prob140 Textbook
+author: Ani Adhikari and Jim Pitman
+email: dcroce@berkeley.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  This is an example book built with Jupyter Books.
+  This is the textbook for Prob 140, built with Jupyter Books.
 
-baseurl: "/jupyter-book" # the subpath of your site, e.g. /blog
-url: "https://predictablynoisy.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/textbook" # the subpath of your site, e.g. /blog
+url: "https://prob140.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 #######################################################################################
 # Jupyter Book settings
@@ -38,13 +38,13 @@ js_url                    : "/assets/js" # Path to JS files
 collapse_inactive_chapters: true  # Whether to collapse the inactive chapters in the sidebar
 
 # Interact link settings
-hub_url                  : "https://mybinder.org"  # The URL for your JupyterHub/BinderHub.
+hub_url                  : "https://prob140.datahub.berkeley.edu"  # The URL for your JupyterHub/BinderHub.
 hub_name                 : "JupyterHub"  # The name of your JupyterHub (used for the button in the NavBar. If an empty string, no button is shown)
-hub_type                 : "binder"  # ['binder', 'jupyterhub']  Whether to build interact links for a BinderHub or a JupyterHub
+hub_type                 : "jupyterhub"  # ['binder', 'jupyterhub']  Whether to build interact links for a BinderHub or a JupyterHub
 textbook_repo_base       : "https://github.com/"  # The site on which the textbook repository is hosted
-textbook_repo_org        : "choldgraf"  # The username or organization that owns this repository
-textbook_repo_name       : "jupyter-book"  # The name of the repository on the web
-textbook_repo_branch     : "master"  # The branch on which your textbook is hosted.
+textbook_repo_org        : "prob140"  # The username or organization that owns this repository
+textbook_repo_name       : "textbook"  # The name of the repository on the web
+textbook_repo_branch     : "gh-pages"  # The branch on which your textbook is hosted.
 use_jupyterlab           : false  # If 'true', interact links will use JupyterLab as the interface
 interact_text            : "Interact"  # The text that interact buttons will contain.
 

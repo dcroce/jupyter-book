@@ -105,4 +105,11 @@ venv.bak/
 
 # Jekyll
 _site/
+<<<<<<< HEAD
 .sass-cache
+=======
+
+# Jetbrains
+.idea/
+
+>>>>>>> textbook/gh-pages

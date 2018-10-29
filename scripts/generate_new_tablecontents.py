@@ -53,6 +53,10 @@ def generate_summary(configuration,cold=False):
   url: /To_the_student
   not_numbered: true
 
+- title: Search
+  url: /Search
+  not_numbered: true
+
 - divider: true
 
     """
@@ -62,11 +66,11 @@ def generate_summary(configuration,cold=False):
     for n,chapter in zip(range(1,len(configuration)+1),configuration):
         chapter_file_name = chapter['sections'][0]['file_name']
         chapter_intro = chapter_file_name[:chapter_file_name.find('.ipynb')]
-        entries = ['- title: Chapter %d %s \n   url: /Chapter_%02d/%s \n   sections:'%(n,chapter['chapter_name'],n,chapter_intro)]
+        entries = ['- title: Chapter %d %s \n  url: /Chapter_%02d/%s \n  sections:'%(n,chapter['chapter_name'],n,chapter_intro)]
         for i,section in list(enumerate(chapter['sections']))[1:]:
             section_filename = section['file_name']
             section_url = section_filename[:section_filename.find('.ipynb')]
-            section_entry = ('   - title: %d.%d %s \n   url: /Chapter_%02d/%s)'%(n,i,section['section_name'],n,section_url))
+            section_entry = ('  -title: %d.%d %s \n  url: /Chapter_%02d/%s)'%(n,i,section['section_name'],n,section_url))
             entries.append(section_entry[:-1])
         chapter_summaries.append('\n'.join(entries)+'\n')
 
